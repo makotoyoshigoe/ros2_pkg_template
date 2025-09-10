@@ -11,7 +11,7 @@ else
 	mv include/$org_name include/$new_name
 	sed -i "s/${org_name}/${new_name}/" CMakeLists.txt package.xml
 fi
-if [ -f ./.git]; then
+if [ -f ./.git ]; then
 	rm -rf .git
 fi
 git init
